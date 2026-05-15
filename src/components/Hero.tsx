@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowDown } from "lucide-react";
+import profileImg from "../assets/profile.jpg";
 
 export default function Hero() {
   return (
@@ -22,10 +23,9 @@ export default function Hero() {
           <div className="w-48 h-48 rounded-full border border-gray-200 p-2">
             <div className="w-full h-full rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
               <img 
-                src="https://picsum.photos/seed/santhosh-profile/400/400" 
+                src={profileImg} 
                 alt="Santhosh" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                referrerPolicy="no-referrer"
               />
             </div>
           </div>

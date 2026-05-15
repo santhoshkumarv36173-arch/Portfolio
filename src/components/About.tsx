@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import profileImg from "../assets/profile.jpg";
 
 export default function About() {
   return (
@@ -21,10 +22,9 @@ export default function About() {
           <div className="relative group max-w-md">
             <div className="p-2 border border-gray-100 rounded-2xl">
               <img 
-                src="https://picsum.photos/seed/santhosh-about/800/1000" 
+                src={profileImg} 
                 alt="Santhosh Kumar V" 
                 className="grayscale group-hover:grayscale-0 transition-all duration-700 rounded-xl w-full aspect-[4/5] object-cover"
-                referrerPolicy="no-referrer"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-luxury-black rounded-full flex items-center justify-center text-luxury-white text-[10px] uppercase tracking-[0.3em] font-bold text-center p-4">
