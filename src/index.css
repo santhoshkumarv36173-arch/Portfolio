@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-luxury-black: #1A1A1A;
+  --color-luxury-white: #FDFDFD;
+  --color-luxury-gray: #F3F4F6;
+  --color-luxury-border: #E5E7EB;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-white text-luxury-black selection:bg-luxury-black selection:text-luxury-white;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom cursor hide if necessary, but we'll use a custom one potentially */
+.cursor-none {
+  cursor: none;
+}
+
+/* Smooth behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+.markdown-body {
+  @apply font-sans;
+}
